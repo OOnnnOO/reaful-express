@@ -19,17 +19,15 @@ use bookstore
 show collections
 ```
 
-创建数据集
+创建集合（collection）
 
-```
-db.createCollect('books')
-```
+如果插入数据时，集合（这里是：books）不存在，插入操作会自动创建集合
 
 添加数据
 
 ```
-db.books.insert({name:'suspense')
-db.books.insert({author:'James'，title:'The murder House',pages:'320')
+db.books.insert({name:'suspense'})
+db.books.insert({author:'James',title:'The murder House',pages:'320'})
 ```
 
 查询
