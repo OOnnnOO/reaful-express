@@ -1,46 +1,14 @@
 # 使用
 
-1. 开启 MongoDB，输入数据
-2. 执行 `npm install` , `node app.js`
+1. 开启 MongoDB，输入数据 ( [MongoDB安装运行](./MongoDB.md) )
+2. 执行 
+  
+    ```
+    npm install
+    node app.js
+    ```
+
 3. 使用 postman 调试请求
-
-## MongoDB 使用
-命令行输入`mongo`，进入MongoDB的命令行客户端
-
-切换数据库
-
-```
-use bookstore
-```
-
-显示数据集（显示表）
-
-```
-show collections
-```
-
-创建集合（collection）
-
-如果插入数据时，集合（这里是：books）不存在，插入操作会自动创建集合
-
-添加数据
-
-```
-db.books.insert({name:'suspense'})
-db.books.insert({author:'James',title:'The murder House',pages:'320'})
-```
-
-查询
-
-```
-db.books.find()
-```
-
-格式化查询结果
-
-```
-db.books.find().pretty()
-```
 
 ## 请求
 > 涉及到 `_id` 的请求，请求地址请根据数据库中的`_id`调整
